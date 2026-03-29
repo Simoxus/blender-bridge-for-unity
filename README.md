@@ -14,8 +14,8 @@ Open .FBX, .OBJ, and .DAE files in Blender from Unity, with instant exporting ba
 * Formats are preserved
 * Blender starts with your default startup scene
 * Viewport zooms into your model on import, so even if your startup scene has you really zoomed out, you won't have to zoom back in :D
-* Export settings are specifically for Unity, so there should be proper axis orientation (you can add/remove any export settings in `blenderbridge-injector`)
-* Settings for close behavior, as well as setting your Blender path (by default configured to use the default Steam path)
+* Export settings are specifically for Unity, so there should be proper axis orientation (you can add/remove any export settings in `blender-bridge-injector.py`)
+* Settings for close behavior, as well as being able to set your Blender path (by default configured to use the default Steam path)
 * No splash screen
 * Edit mode is in face selection by default
 * Texture loading
