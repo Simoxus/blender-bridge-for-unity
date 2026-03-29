@@ -5,7 +5,7 @@ Open .FBX, .OBJ, and .DAE files in Blender from Unity, with instant exporting ba
 1. Open Unity and go to Window > Package Manager
 2. Click the + button in the corner
 3. Do "Add package from git URL"
-4. Enter `https://github.com/Simoxus/blender-bridge.git`
+4. Enter `https://github.com/Simoxus/blender-bridge-for-unity.git`
 5. Boom
 
 ## Features
