@@ -1,5 +1,5 @@
 {
-    "name": "BlenderBridge",
+    "name": "BlenderBridge.Editor",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [
