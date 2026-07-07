@@ -1,27 +1,27 @@
 {
-    "name": "com.simoxus.blender-bridge",
-    "displayName": "Blender Bridge",
-    "description": "Open .FBX, .OBJ, and .DAE files in Blender from Unity, along with easy saving back to the asset (using a Python script to override Ctrl-S)",
-    "version": "0.1.1",
-    "unity": "2022.3",
-    "license": "MIT",
-    "author": {
-        "name": "Simoxus",
-        "url": "https://github.com/Simoxus"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Simoxus/blender-bridge-for-unity.git"
-    },
-    "keywords": [
-        "blender",
-        "fbx",
-        "obj",
-        "dae",
-        "3d",
-        "modeling",
-        "workflow",
-        "integration",
-        "editor"
-    ]
+  "name": "com.simoxus.blender-bridge",
+  "displayName": "Blender Bridge",
+  "description": "Open .FBX, .OBJ, and .DAE files in Blender from Unity, along with easy saving back to the asset (using a Python script to override Ctrl-S)",
+  "version": "0.1.2",
+  "unity": "2022.3",
+  "license": "MIT",
+  "author": {
+    "name": "Simoxus",
+    "url": "https://github.com/Simoxus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simoxus/blender-bridge-for-unity.git"
+  },
+  "keywords": [
+    "blender",
+    "fbx",
+    "obj",
+    "dae",
+    "3d",
+    "modeling",
+    "workflow",
+    "integration",
+    "editor"
+  ]
 }
