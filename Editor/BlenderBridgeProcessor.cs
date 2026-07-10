@@ -1,4 +1,6 @@
-// original script is by FleshMobProductions (thank you!): https://gist.github.com/FleshMobProductions/f598096b705f6a9c96beb58e284303f1
+/*
+ * Original script: https://gist.github.com/FleshMobProductions/f598096b705f6a9c96beb58e284303f1
+*/
 
 using System;
 using System.IO;
@@ -31,12 +33,21 @@ public static class BlenderBridgeProcessor
         }
     }
 
+#if UNITY_6000_3_OR_NEWER
+    [OnOpenAsset]
+    public static bool OnOpenAsset(EntityId entityId, int line)
+    {
+        UnityEngine.Object obj = EditorUtility.EntityIdToObject(entityId);
+        string assetPath = AssetDatabase.GetAssetPath(entityId);
+        string extension = Path.GetExtension(assetPath).ToLowerInvariant();
+#else
     [OnOpenAsset]
     public static bool OnOpenAsset(int instanceId, int line)
     {
         UnityEngine.Object obj = EditorUtility.InstanceIDToObject(instanceId);
         string assetPath = AssetDatabase.GetAssetPath(instanceId);
         string extension = Path.GetExtension(assetPath).ToLowerInvariant();
+#endif
 
         if (Array.Exists(SUPPORTED_EXTENSIONS, ext => ext.Equals(extension, StringComparison.OrdinalIgnoreCase))
             && obj is GameObject)
@@ -69,7 +80,7 @@ public static class BlenderBridgeProcessor
             return;
         }
 
-        string arguments = arguments = $"--python \"{pythonScript}\" -- \"{modelFullPath}\"";
+        string arguments = $"--python \"{pythonScript}\" -- \"{modelFullPath}\"";
         StartBlenderWithArguments(arguments);
     }
 
