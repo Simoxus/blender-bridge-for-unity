@@ -2,7 +2,7 @@
   "name": "com.simoxus.blender-bridge",
   "displayName": "Blender Bridge",
   "description": "Open .FBX, .OBJ, and .DAE files in Blender from Unity, along with easy saving back to the asset (using a Python script to override Ctrl-S)",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "unity": "2022.3",
   "license": "MIT",
   "author": {
