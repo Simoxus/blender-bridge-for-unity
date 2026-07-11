@@ -7,7 +7,9 @@ Open .FBX, .OBJ, and .DAE files in Blender from Unity, with instant exporting ba
 ## Features
 
 * **Two-click editing** (double-click any `.FBX`, `.OBJ`, or `.DAE` file in Unity to instantly open it in Blender)
-* **Instant export back to Unity** (`Ctrl+S`, or the matching entry under File > Export)
+* **Instant export back to Unity**
+    * Ctrl-S
+    * The entry under File > Export
 * **Export settings specifically for Unity** (fully editable in `blender-bridge-injector.py`)
 * **Support for .FBX, .OBJ, and .DAE**
 * **Blender opens with your default startup scene**
