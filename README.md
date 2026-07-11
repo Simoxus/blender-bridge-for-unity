@@ -1,24 +1,24 @@
-# Blender Bridge
+![](.github/header.png)
+
 Open .FBX, .OBJ, and .DAE files in Blender from Unity, with instant exporting back to the original asset (using a Python script to replace normal saving)
 
-## Installing
-1. Open Unity and go to Window > Package Manager
-2. Click the + button in the corner
-3. Do "Add package from git URL"
-4. Enter `https://github.com/Simoxus/blender-bridge-for-unity.git`
-5. Boom
+---
 
 ## Features
-* Two-click editing, you can double-click any .FBX or .OBJ file in Unity to instantly open it in Blender
-* Pressing Ctrl+S OR using the entry in File/Export/ in Blender will save and automatically export the file back to Unity
-* Formats are preserved
-* Blender starts with your default startup scene
-* Viewport zooms into your model on import, so even if your startup scene has you really zoomed out, you won't have to zoom back in :D
-* Export settings are specifically for Unity, so there should be proper axis orientation (you can add/remove any export settings in `blender-bridge-injector.py`)
-* Settings for close behavior, as well as being able to set your Blender path (by default configured to use the default Steam path)
-* No splash screen
-* Edit mode is in face selection by default
-* Texture loading
+
+* **Two-click editing** (double-click any `.FBX`, `.OBJ`, or `.DAE` file in Unity to instantly open it in Blender)
+* **Instant export back to Unity** (`Ctrl+S`, or the matching entry under File > Export)
+* **Export settings specifically for Unity** (fully editable in `blender-bridge-injector.py`)
+* **Support for .FBX, .OBJ, and .DAE**
+* **Blender opens with your default startup scene**
+* **Viewport auto-zooms to your model on import**
+* **Configurable Blender path** (default is the Steam install location)
+* **No splash screen**
+* **Face select mode by default**
+* **Optional texture loading**
+* **That's about it :D**
+
+---
 
 https://github.com/user-attachments/assets/c8879a20-0098-4138-a847-a047c0887f8a
 
