@@ -2,20 +2,6 @@
 
 namespace BlenderBridge
 {
-    [System.Serializable]
-    public class BlenderBridgeSettingsPayload
-    {
-        public bool closeAfterQuickSave;
-        public bool closeAfterManualSave;
-        public bool includeCameras;
-        public bool includeLights;
-        public bool includeOther;
-        public bool bakeAnimation;
-        public bool loadTextures;
-        public string texturePath;
-        public string[] textureExtensions;
-    }
-
     public static class BlenderBridgeSettings
     {
         private const string PREFIX = "BlenderBridge.";
@@ -119,6 +105,20 @@ namespace BlenderBridge
                 }
                 return result.ToArray();
             }
+        }
+
+        [System.Serializable]
+        public class Payload
+        {
+            public bool closeAfterQuickSave;
+            public bool closeAfterManualSave;
+            public bool includeCameras;
+            public bool includeLights;
+            public bool includeOther;
+            public bool bakeAnimation;
+            public bool loadTextures;
+            public string texturePath;
+            public string[] textureExtensions;
         }
     }
 }

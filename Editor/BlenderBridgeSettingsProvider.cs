@@ -45,7 +45,7 @@ namespace BlenderBridge
 
                             EditorGUILayout.LabelField("Save Behavior", EditorStyles.boldLabel);
                             BlenderBridgeSettings.CloseAfterQuickSave = EditorGUILayout.Toggle(
-                                new GUIContent("Close After Quick Save", "Closes Blender after using the save shortcut."),
+                                new GUIContent("Close After Quick Save", "Closes Blender after using the save shortcut. (Ctrl-S, usually!)"),
                                 BlenderBridgeSettings.CloseAfterQuickSave
                             );
                             BlenderBridgeSettings.CloseAfterManualSave = EditorGUILayout.Toggle(
@@ -58,10 +58,7 @@ namespace BlenderBridge
                             EditorGUILayout.LabelField("FBX Export", EditorStyles.boldLabel);
                             BlenderBridgeSettings.IncludeCameras = EditorGUILayout.Toggle("Include Cameras", BlenderBridgeSettings.IncludeCameras);
                             BlenderBridgeSettings.IncludeLights = EditorGUILayout.Toggle("Include Lights", BlenderBridgeSettings.IncludeLights);
-                            BlenderBridgeSettings.IncludeOther = EditorGUILayout.Toggle(
-                                new GUIContent("Include Other", "Curves, surfaces, metaballs, etc."),
-                                BlenderBridgeSettings.IncludeOther
-                            );
+                            BlenderBridgeSettings.IncludeOther = EditorGUILayout.Toggle("Include Other", BlenderBridgeSettings.IncludeOther);
                             BlenderBridgeSettings.BakeAnimation = EditorGUILayout.Toggle("Bake Animation", BlenderBridgeSettings.BakeAnimation);
 
                             EditorGUILayout.Space(8);

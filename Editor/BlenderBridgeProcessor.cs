@@ -86,7 +86,7 @@ namespace BlenderBridge
 
         private static string WriteSettingsFile()
         {
-            var payload = new BlenderBridgeSettingsPayload
+            var payload = new BlenderBridgeSettings.Payload
             {
                 closeAfterQuickSave = BlenderBridgeSettings.CloseAfterQuickSave,
                 closeAfterManualSave = BlenderBridgeSettings.CloseAfterManualSave,
